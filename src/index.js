@@ -6,7 +6,7 @@ var path = require("path");
 
 app.get("/", (req, res) => {
     response.send({
-        message: "Hello world!",
+        message: "Hello world! Github Actions.",
         sample: "GitHubActions"
     });
 })
