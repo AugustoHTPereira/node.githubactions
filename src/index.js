@@ -3,7 +3,10 @@ var express = require("express");
 var app = express();
 
 app.get("/", (request, response) => {
-    response.send("Hello world!");
+    response.send({
+        message: "Hello world!",
+        sample: "GitHubActions"
+    });
 })
 
 app.listen(3333, () => {
