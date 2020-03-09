@@ -2,7 +2,9 @@ var express = require("express");
 
 var app = express();
 
-app.get("/", (request, response) => {
+var path = require("path");
+
+app.get("/", (req, res) => {
     response.send({
         message: "Hello world!",
         sample: "GitHubActions"

@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./src/index.js && echo \"Status: Application started\""
+    "start": "node ./src/index.js && echo \"Status: Application started\"",
+    "build": "webpack -p"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,10 @@
   },
   "homepage": "https://github.com/AugustoHTPereira/node.githubactions#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "webpack": "^4.42.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.11"
   }
 }
